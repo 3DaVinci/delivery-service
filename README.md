@@ -1,5 +1,7 @@
 # Библиотека для расчета стоимости доставки груза
 
+[![Build Status](https://api.travis-ci.org/3DaVinci/delivery-service.png?branch=master)](https://travis-ci.org/3DaVinci/delivery-service)
+
 ## Возможности
 
 * Получение списка локаций, в которые возможна отправка груза.
@@ -54,6 +56,9 @@ $delivery = $factory->createDelivery(
 ```
 
 ```php
+// Использование кеширования на 1 час
+$delivery->initCache(3600);
+
 // Получение списка локаций
 /** @var \Delivery\Location $location */
 foreach ($delivery->getLocations() as $location) {
