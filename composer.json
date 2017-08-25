@@ -1,0 +1,28 @@
+{
+    "name": "3DaVinci/delivery-service",
+    "version": "0.1.0",
+    "description": "Cargo delivery calculation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Morozov",
+            "email": "andrey@3davinci.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7",
+        "ext-soap": "*",
+        "symfony/cache": "~3.3.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.1"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Delivery\\": "src/Delivery/"
+        }
+    }
+}
